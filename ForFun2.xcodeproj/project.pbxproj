@@ -3,19 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7BF75BAB2C38221363BA3158 /* Pods_ForFun2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03EFC73CB591625162717C33 /* Pods_ForFun2.framework */; };
+		EB658F942567A55900FC3DE1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB658F932567A55900FC3DE1 /* GoogleService-Info.plist */; };
+		EB911BDB2567B679007F2C15 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB911BDA2567B679007F2C15 /* ProfileViewModel.swift */; };
 		EBE7FAF3255F6F82008AF984 /* ForFun2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE7FAF2255F6F82008AF984 /* ForFun2App.swift */; };
 		EBE7FAF5255F6F82008AF984 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE7FAF4255F6F82008AF984 /* ContentView.swift */; };
 		EBE7FAF7255F6F83008AF984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE7FAF6255F6F83008AF984 /* Assets.xcassets */; };
 		EBE7FAFA255F6F83008AF984 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE7FAF9255F6F83008AF984 /* Preview Assets.xcassets */; };
 		EBE7FAFC255F6F83008AF984 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE7FAFB255F6F83008AF984 /* Persistence.swift */; };
 		EBE7FAFF255F6F83008AF984 /* ForFun2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBE7FAFD255F6F83008AF984 /* ForFun2.xcdatamodeld */; };
+		EBE7FB0B255F7664008AF984 /* UniversityGirlsFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE7FB0A255F7664008AF984 /* UniversityGirlsFormView.swift */; };
+		EBE7FB0F255F767C008AF984 /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE7FB0E255F767C008AF984 /* FormViewModel.swift */; };
+		EBE98D6B2567725500F55E9A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE98D6A2567725500F55E9A /* Home.swift */; };
+		EBE98D6E256773AA00F55E9A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE98D6D256773AA00F55E9A /* LoginView.swift */; };
+		EBE98D71256774C700F55E9A /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE98D70256774C700F55E9A /* RegisterView.swift */; };
+		EBE98D74256776CD00F55E9A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE98D73256776CD00F55E9A /* LoginViewModel.swift */; };
+		EBE98D772567797500F55E9A /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE98D762567797500F55E9A /* RegisterViewModel.swift */; };
+		EBE98D7A2567802A00F55E9A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE98D792567802A00F55E9A /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03EFC73CB591625162717C33 /* Pods_ForFun2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForFun2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		248A3D87C11925AF0737F429 /* Pods-ForFun2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForFun2.debug.xcconfig"; path = "Target Support Files/Pods-ForFun2/Pods-ForFun2.debug.xcconfig"; sourceTree = "<group>"; };
+		2EAF37673A7C3A39C406616E /* Pods-ForFun2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForFun2.release.xcconfig"; path = "Target Support Files/Pods-ForFun2/Pods-ForFun2.release.xcconfig"; sourceTree = "<group>"; };
+		EB658F932567A55900FC3DE1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EB911BDA2567B679007F2C15 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		EBE7FAEF255F6F82008AF984 /* ForFun2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForFun2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE7FAF2255F6F82008AF984 /* ForFun2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForFun2App.swift; sourceTree = "<group>"; };
 		EBE7FAF4255F6F82008AF984 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,6 +40,14 @@
 		EBE7FAFB255F6F83008AF984 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		EBE7FAFE255F6F83008AF984 /* ForFun2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ForFun2.xcdatamodel; sourceTree = "<group>"; };
 		EBE7FB00255F6F83008AF984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBE7FB0A255F7664008AF984 /* UniversityGirlsFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityGirlsFormView.swift; sourceTree = "<group>"; };
+		EBE7FB0E255F767C008AF984 /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
+		EBE98D6A2567725500F55E9A /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		EBE98D6D256773AA00F55E9A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		EBE98D70256774C700F55E9A /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		EBE98D73256776CD00F55E9A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		EBE98D762567797500F55E9A /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		EBE98D792567802A00F55E9A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +55,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BF75BAB2C38221363BA3158 /* Pods_ForFun2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22B44086020D385816F95400 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				248A3D87C11925AF0737F429 /* Pods-ForFun2.debug.xcconfig */,
+				2EAF37673A7C3A39C406616E /* Pods-ForFun2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D9E813EE3D6E31EA66156D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03EFC73CB591625162717C33 /* Pods_ForFun2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EBE7FAE6255F6F82008AF984 = {
 			isa = PBXGroup;
 			children = (
 				EBE7FAF1255F6F82008AF984 /* ForFun2 */,
 				EBE7FAF0255F6F82008AF984 /* Products */,
+				22B44086020D385816F95400 /* Pods */,
+				D9E813EE3D6E31EA66156D7B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +100,10 @@
 		EBE7FAF1255F6F82008AF984 /* ForFun2 */ = {
 			isa = PBXGroup;
 			children = (
+				EB658F932567A55900FC3DE1 /* GoogleService-Info.plist */,
+				EBE7FB09255F7619008AF984 /* ViewModel */,
+				EBE7FB08255F760D008AF984 /* View */,
+				EBE7FB07255F7602008AF984 /* Model */,
 				EBE7FAF2255F6F82008AF984 /* ForFun2App.swift */,
 				EBE7FAF4255F6F82008AF984 /* ContentView.swift */,
 				EBE7FAF6255F6F83008AF984 /* Assets.xcassets */,
@@ -75,6 +123,36 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		EBE7FB07255F7602008AF984 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EBE7FB08255F760D008AF984 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EBE7FB0A255F7664008AF984 /* UniversityGirlsFormView.swift */,
+				EBE98D6A2567725500F55E9A /* Home.swift */,
+				EBE98D6D256773AA00F55E9A /* LoginView.swift */,
+				EBE98D70256774C700F55E9A /* RegisterView.swift */,
+				EBE98D792567802A00F55E9A /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EBE7FB09255F7619008AF984 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EBE7FB0E255F767C008AF984 /* FormViewModel.swift */,
+				EBE98D73256776CD00F55E9A /* LoginViewModel.swift */,
+				EBE98D762567797500F55E9A /* RegisterViewModel.swift */,
+				EB911BDA2567B679007F2C15 /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBE7FB03255F6F83008AF984 /* Build configuration list for PBXNativeTarget "ForFun2" */;
 			buildPhases = (
+				7AFE64F91C19703DFF1B49C2 /* [CP] Check Pods Manifest.lock */,
 				EBE7FAEB255F6F82008AF984 /* Sources */,
 				EBE7FAEC255F6F82008AF984 /* Frameworks */,
 				EBE7FAED255F6F82008AF984 /* Resources */,
+				78DE87E17986ED0281544C2E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB658F942567A55900FC3DE1 /* GoogleService-Info.plist in Resources */,
 				EBE7FAFA255F6F83008AF984 /* Preview Assets.xcassets in Resources */,
 				EBE7FAF7255F6F83008AF984 /* Assets.xcassets in Resources */,
 			);
@@ -139,15 +220,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		78DE87E17986ED0281544C2E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ForFun2/Pods-ForFun2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ForFun2/Pods-ForFun2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ForFun2/Pods-ForFun2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AFE64F91C19703DFF1B49C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ForFun2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EBE7FAEB255F6F82008AF984 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE98D71256774C700F55E9A /* RegisterView.swift in Sources */,
+				EBE7FB0F255F767C008AF984 /* FormViewModel.swift in Sources */,
 				EBE7FAFC255F6F83008AF984 /* Persistence.swift in Sources */,
 				EBE7FAF5255F6F82008AF984 /* ContentView.swift in Sources */,
+				EBE98D7A2567802A00F55E9A /* ProfileView.swift in Sources */,
+				EBE98D772567797500F55E9A /* RegisterViewModel.swift in Sources */,
 				EBE7FAFF255F6F83008AF984 /* ForFun2.xcdatamodeld in Sources */,
+				EBE7FB0B255F7664008AF984 /* UniversityGirlsFormView.swift in Sources */,
 				EBE7FAF3255F6F82008AF984 /* ForFun2App.swift in Sources */,
+				EBE98D6E256773AA00F55E9A /* LoginView.swift in Sources */,
+				EB911BDB2567B679007F2C15 /* ProfileViewModel.swift in Sources */,
+				EBE98D74256776CD00F55E9A /* LoginViewModel.swift in Sources */,
+				EBE98D6B2567725500F55E9A /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +404,7 @@
 		};
 		EBE7FB04255F6F83008AF984 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 248A3D87C11925AF0737F429 /* Pods-ForFun2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,6 +427,7 @@
 		};
 		EBE7FB05255F6F83008AF984 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EAF37673A7C3A39C406616E /* Pods-ForFun2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

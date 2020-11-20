@@ -1,0 +1,6 @@
+framework module Pods_ForFun2 {
+  umbrella header "Pods-ForFun2-umbrella.h"
+
+  export *
+  module * { export * }
+}
