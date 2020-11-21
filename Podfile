@@ -7,6 +7,7 @@ target 'ForFun2' do
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
 pod 'Firebase/Storage'
+pod 'FirebaseFirestoreSwift'
   # Pods for ForFun2
 
 end

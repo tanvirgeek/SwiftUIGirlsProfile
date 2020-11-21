@@ -58,7 +58,9 @@ struct RegisterView: View {
             
             Spacer()
         }.alert(isPresented: $registerVM.isShowError) { () -> Alert in
-            Alert(title: Text("Error"), message: Text(registerVM.erroMessage), dismissButton: .destructive(Text("OK")))
+            Alert(title: Text("Error"), message: Text(registerVM.erroMessage), dismissButton: .destructive(Text("OK")){
+                registerVM.erroMessage = ""
+            })
         }
 
     }

@@ -31,6 +31,11 @@ struct LoginView: View {
                 })
             }
             Spacer()
+        }.alert(isPresented: $loginVM.showErrorMessage) {
+            Alert(title: Text("Hey"), message: Text(loginVM.errorMessage), dismissButton: .destructive(Text("OK")){
+                loginVM.errorMessage = ""
+            })
+                
         }
     }
 }

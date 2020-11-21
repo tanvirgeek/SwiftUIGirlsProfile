@@ -4,7 +4,7 @@
 //
 //  Created by MD Tanvir Alam on 20/11/20.
 //
-
+import FirebaseFirestore
 import Foundation
 import Firebase
 
@@ -21,13 +21,33 @@ class RegisterViewModel:ObservableObject{
     
     func registerUser(){
         validate()
+        
         if isShowError == false{
             Auth.auth().createUser(withEmail: emailAddress, password: passWord) { authResult, error in
                 if error != nil{
                     self.erroMessage = error!.localizedDescription + " "
                     self.isShowError = true
                     print(error!)
+                    
+                    //if no error push data to firestore
                 }else{
+                    let db = Firestore.firestore()
+                    
+                    db.collection("Users").document(Auth.auth().currentUser!.uid).setData([
+                        "firstName": self.firstName,
+                        "lastName": self.lastName,
+                        "age": self.age,
+                        "emailAddress": self.emailAddress
+                    ]) { err in
+                        if let err = err {
+                            self.erroMessage += err.localizedDescription
+                            self.isShowError = true
+                            print("Error writing document: \(err)")
+                        } else {
+                            print("Document successfully written!")
+                        }
+                    }
+                    // reset the field values
                     if self.isShowError == false{
                         self.passWord = ""
                         self.confirmPass = ""

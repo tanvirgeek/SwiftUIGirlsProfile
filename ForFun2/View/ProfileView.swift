@@ -12,13 +12,23 @@ struct ProfileView: View {
     @StateObject var profileVM = ProfileViewModel()
     var body: some View {
         VStack{
+            Image(systemName: "person")
+                .resizable()
+                .frame(width: 100, height: 100, alignment: .top)
+                .aspectRatio(contentMode: .fill)
+                .cornerRadius(50)
+            Text("User's full name")
+            Text("User's Age")
+            Text("User's Email")
             Button(action: {
                 profileVM.logOut()
                 self.present.wrappedValue.dismiss()
             }, label: {
                 Text("Logout")
             })
+            Spacer()
         }.navigationBarBackButtonHidden(true)
+        .navigationBarHidden(true)
     }
 }
 
