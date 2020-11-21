@@ -8,15 +8,17 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @Environment(\.presentationMode) var present:Binding<PresentationMode>
     @StateObject var profileVM = ProfileViewModel()
     var body: some View {
         VStack{
             Button(action: {
                 profileVM.logOut()
+                self.present.wrappedValue.dismiss()
             }, label: {
                 Text("Logout")
             })
-        }
+        }.navigationBarBackButtonHidden(true)
     }
 }
 

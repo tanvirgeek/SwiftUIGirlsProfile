@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7BF75BAB2C38221363BA3158 /* Pods_ForFun2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03EFC73CB591625162717C33 /* Pods_ForFun2.framework */; };
+		EB4A37292568A0C30078F780 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4A37282568A0C30078F780 /* Extensions.swift */; };
 		EB658F942567A55900FC3DE1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB658F932567A55900FC3DE1 /* GoogleService-Info.plist */; };
 		EB911BDB2567B679007F2C15 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB911BDA2567B679007F2C15 /* ProfileViewModel.swift */; };
 		EBE7FAF3255F6F82008AF984 /* ForFun2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE7FAF2255F6F82008AF984 /* ForFun2App.swift */; };
@@ -30,6 +31,7 @@
 		03EFC73CB591625162717C33 /* Pods_ForFun2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForFun2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		248A3D87C11925AF0737F429 /* Pods-ForFun2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForFun2.debug.xcconfig"; path = "Target Support Files/Pods-ForFun2/Pods-ForFun2.debug.xcconfig"; sourceTree = "<group>"; };
 		2EAF37673A7C3A39C406616E /* Pods-ForFun2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForFun2.release.xcconfig"; path = "Target Support Files/Pods-ForFun2/Pods-ForFun2.release.xcconfig"; sourceTree = "<group>"; };
+		EB4A37282568A0C30078F780 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EB658F932567A55900FC3DE1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EB911BDA2567B679007F2C15 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		EBE7FAEF255F6F82008AF984 /* ForFun2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForFun2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +81,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EB4A37272568A0AA0078F780 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				EB4A37282568A0C30078F780 /* Extensions.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
 		EBE7FAE6255F6F82008AF984 = {
 			isa = PBXGroup;
 			children = (
@@ -100,7 +110,7 @@
 		EBE7FAF1255F6F82008AF984 /* ForFun2 */ = {
 			isa = PBXGroup;
 			children = (
-				EB658F932567A55900FC3DE1 /* GoogleService-Info.plist */,
+				EB4A37272568A0AA0078F780 /* Extentions */,
 				EBE7FB09255F7619008AF984 /* ViewModel */,
 				EBE7FB08255F760D008AF984 /* View */,
 				EBE7FB07255F7602008AF984 /* Model */,
@@ -109,6 +119,7 @@
 				EBE7FAF6255F6F83008AF984 /* Assets.xcassets */,
 				EBE7FAFB255F6F83008AF984 /* Persistence.swift */,
 				EBE7FB00255F6F83008AF984 /* Info.plist */,
+				EB658F932567A55900FC3DE1 /* GoogleService-Info.plist */,
 				EBE7FAFD255F6F83008AF984 /* ForFun2.xcdatamodeld */,
 				EBE7FAF8255F6F83008AF984 /* Preview Content */,
 			);
@@ -280,6 +291,7 @@
 				EB911BDB2567B679007F2C15 /* ProfileViewModel.swift in Sources */,
 				EBE98D74256776CD00F55E9A /* LoginViewModel.swift in Sources */,
 				EBE98D6B2567725500F55E9A /* Home.swift in Sources */,
+				EB4A37292568A0C30078F780 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

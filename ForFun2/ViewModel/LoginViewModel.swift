@@ -20,6 +20,8 @@ class LoginViewModel:ObservableObject{
             if error != nil {
                 print("ERROR: \(error!)")
             }else{
+                strongSelf.passWord = ""
+                strongSelf.emailAddress = ""
                 strongSelf.isGoToProfilePage = true
                 print("Login successful")
             }

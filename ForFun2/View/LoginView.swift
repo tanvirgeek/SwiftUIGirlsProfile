@@ -19,6 +19,7 @@ struct LoginView: View {
             }
             NavigationLink(destination: ProfileView(), isActive: $loginVM.isGoToProfilePage){
                 Button(action: {
+                    UIApplication.shared.endEditing()
                     loginVM.login()
                 }, label: {
                     Text("Login")
@@ -33,6 +34,7 @@ struct LoginView: View {
         }
     }
 }
+
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
